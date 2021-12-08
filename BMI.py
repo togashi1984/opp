@@ -23,8 +23,12 @@ class BMI:
     def __init__(self, height, weight):
         self.height = height
         self.weight = weight
-    #heightやweightをインスタンス変数と呼ぶ
-    #[self.〇〇]は属性と呼ぶ,クラスの中で呼びだす時は[self.〇〇]
+#8:32==>bmi.calculate_bmiって何か変…これにすればまとまるじゃん！ていう違和感が大事
+# self.value = self.weight / (self.height ** 2)
+#もっと言うとself.height = height,self.weight = weightもいらなくなる
+
+#heightやweightをインスタンス変数と呼ぶ
+#[self.〇〇]は属性と呼ぶ,クラスの中で呼びだす時は[self.〇〇]
     def calculate_bmi(self):
         return self.weight / (self.height ** 2)
 #クラス内における関数=>インスタンスメソッド
